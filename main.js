@@ -6,7 +6,7 @@ const TCMentor = require("./TCMentor");
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-const port = 8900;
+const port = process.env.PORT || 8900;
 
 const TCMentorBot = new TCMentor();
 app.post("/", (request, response) => {
