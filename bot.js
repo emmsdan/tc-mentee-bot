@@ -11,14 +11,7 @@ var bot = new SlackBot({
 })
 
 bot.on("message", msg => {
-  switch (msg.type) {
-    case "message":
-      // we only want to listen to direct messages that come from the user
-      if (msg.channel[0] === "D" && msg.bot_id === undefined) {
-        getRandomJoke(postMessage, msg.user)
-      }
-      break
-  }
+    getRandomJoke(postMessage, msg.user)
 })
 
 const postMessage = (message, user) => {
