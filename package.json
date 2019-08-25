@@ -4,6 +4,7 @@
   "description": "",
   "main": "bot.js",
   "scripts": {
+    "start": "node bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +22,13 @@
   },
   "homepage": "https://github.com/emmsdan/tc-mentee-bot#readme",
   "dependencies": {
+    "@slack/bolt": "^1.2.0",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
     "request": "^2.88.0",
-    "slackbots": "^1.2.0"
+    "slackbots": "^1.2.0",
+    "validator": "^11.1.0"
   }
 }
